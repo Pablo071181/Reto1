@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/img/GestionComercial.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./css/index.css" />
 
   <title>Base 2 By Web 4B</title>
@@ -33,50 +33,56 @@
 <body class="body">
   <header class="header">
     <nav class="header-nav">
-      <div class="header-conteiner">
+      <div class="header-nav__container">
         <a href="#iHero" class="header-nav__link-logo-container">
-          <img src="./assets/img/logo-base-2.webp" alt="Logo Base 2" width="108" height="32" />
+          <img src="./assets/img/logo-base-2.webp" alt="Logo Base 2" width="108" height="32"
+            class="header-nav__link-logo" />
         </a>
-        <ul>
+        <ul class="header-nav__menu-list-container">
           <li>
-            <a href="#">Proyectos</a>
+            <a href="#iExperience" class="header-nav__menu-link">Experiencia</a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#iContact" class="header-nav__menu-link">Contacto</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/elliotgaramendi/" target="_blank" rel="noopener noreferrer">Elliot</a>
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" target="_blank" rel="noopener noreferrer"
+              class="header-nav__menu-link header-nav__menu-link--active">Elliot</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <article id="iHero">
-      <div>
-        <div>
-          <h1>Base 2 by Web 4B</h1>
-          <h2>Los mejores diseños y desarrollos de páginas web en el Perú</h2>
-          <p>
+    <article class="i-hero" id="iHero">
+      <div class="i-hero__container">
+        <div class="i-hero__info-container">
+          <h1 class="i-hero__info-title">Base 2 by Web 4B</h1>
+          <h2 class="i-hero__info-subtitle">Los mejores diseños y desarrollos de páginas web en el Perú</h2>
+          <p class="i-hero__info-paragraph">
             Somos el mejor lugar donde puedes aprender sobre desarrollo web frontend. Asimismo, con Base 2 by Web 4B
             puedes hacer realidad ese sueño que tienes en mente. ¡Cambia tu vida!
           </p>
-          <a href="https://www.linkedin.com/in/elliotgaramendi/" class="hero__info-link">¡Aprender gratis!</a>
+          <a href="https://www.linkedin.com/in/elliotgaramendi/" class="i-hero__info-link">¡Aprender gratis!</a>
+          <a href="https://www.linkedin.com/in/elliotgaramendi/" class="i-hero__info-link">¡Ahora sigue!</a>
+          <a href="https://www.linkedin.com/in/elliotgaramendi/" class="i-hero__info-link">Ver el futuro!</a>
         </div>
-        <div>
-          <div>
-            <img src="./assets/img/elliot-garamendi.webp" alt="Elliot Garamendi" width="256" height="256" />
-            <figure>
-              <img src="./assets/svg/logo-html-5.svg" alt="HTML" width="64" height="64" />
-              <img src="./assets/svg/logo-css-3.svg" alt="CSS" width="64" height="64" />
-              <img src="./assets/svg/logo-javascript.svg" alt="JavaScript" width="64" height="64" />
-              <img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64" />
+        <div class="i-hero__img-container">
+          <div class="i-hero__img-pro-tech-container">
+            <img src="./assets/img/GestionComercial.ico" alt="Elliot Garamendi" width="256" height="256"
+              class="i-hero__img-pro" />
+            <figure class="i-hero__img-tech-container">
+              <img src="./assets/svg/logo-html-5.svg" alt="HTML" width="64" height="64" class="i-hero__img-tech" />
+              <img src="./assets/svg/logo-css-3.svg" alt="CSS" width="64" height="64" class="i-hero__img-tech" />
+              <img src="./assets/svg/logo-javascript.svg" alt="JavaScript" width="64" height="64"
+                class="i-hero__img-tech" />
+              <img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64" class="i-hero__img-tech" />
             </figure>
           </div>
         </div>
       </div>
     </article>
-    <section>
+    <section id="iExperience">
       <div>
         <h2>Experiencia</h2>
         <table>
@@ -133,7 +139,7 @@
         </table>
       </div>
     </section>
-    <section>
+    <section id="iContact">
       <div>
         <h2>Contacto</h2>
         <form>
