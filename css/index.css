@@ -166,16 +166,62 @@ transition: filter 0.25s box-shadow 0.25s;
     justify-content: center;
   }
   
-  .i-hero__img-pro-tech-container {}
+  .i-hero__img-pro-tech-container {
+    position: relative;
+  }
   
   .i-hero__img-pro {
-    border-radius: 25%;
+    display: block;
+      background: #00000080;
+      border-radius: 50%;
     width: 256px;
     height: 256px;
   }
   
   .i-hero__img-tech-container {
+/*    display: flex;
+    justify-content: center; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-color: #fff8;*/
     margin: 0;
   }
   
-  .i-hero__img-tech {}
+  .i-hero__img-tech {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    /*top: 0;
+    right: 50%;*/
+
+  }
+
+  .i-hero__img-tech:nth-child(1) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+    /*align-self: flex-end;*/
+  }
+
+  .i-hero__img-tech:nth-child(2) {
+    top: 50%;
+    left: 0%;
+    
+    transform: translate(-50%,-50%) rotate(90deg);
+
+  }
+  .i-hero__img-tech:nth-child(3) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+
+  }
+  .i-hero__img-tech:nth-child(4) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%) rotate(180deg);
+
+  }
