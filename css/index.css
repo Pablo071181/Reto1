@@ -9,7 +9,7 @@
   }
   
   .body {
-    background-color: #22e483;
+    background-color: rgb(32, 35, 42);
     color: rgba(187, 255, 0, 0.896);
     font-family: monospace;
     margin: 0;
@@ -148,7 +148,7 @@
   }
   
   .i-hero__info-link {
-    background-color: #61dafb;
+    background-color: #69b85780;
     border: none;
     border-radius: 0.5rem;
     color: #000;
